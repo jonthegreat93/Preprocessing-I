@@ -269,7 +269,7 @@ body {
   font-family: monospace;
   padding-bottom: 2%;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .workHistory h4 {
     font-size: 25px;
   }
