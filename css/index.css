@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -147,7 +147,7 @@ body {
   justify-content: space-evenly;
   padding: 1% 0 1% 0;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .container .navigation {
     justify-content: space-between;
   }
@@ -165,7 +165,7 @@ body {
   text-align: center;
   padding-top: 3%;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .container h1 {
     font-size: 25px;
     padding-top: 10%;
@@ -175,7 +175,7 @@ body {
   padding: 3% 0 0 30%;
   align-items: center;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .container img {
     display: none;
   }
@@ -188,7 +188,7 @@ body {
   flex-direction: column;
   align-items: left;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .aboutMe {
     width: 100%;
     align-items: center;
@@ -201,7 +201,7 @@ body {
   font-family: monospace;
   padding-bottom: 2%;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .aboutMe h2 {
     font-size: 25px;
   }
@@ -225,7 +225,7 @@ body {
   font-size: 15px;
   color: darkslategrey;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .skills {
     width: 100%;
     align-items: center;
@@ -239,7 +239,7 @@ body {
   font-family: monospace;
   text-align: left;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .skills h3 {
     font-size: 25px;
   }
@@ -255,7 +255,7 @@ body {
   font-size: 15px;
   color: darkslategrey;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .workHistory {
     width: 100%;
     align-items: center;
@@ -286,7 +286,7 @@ body {
   color: darkslategrey;
   justify-content: space-evenly;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .contact a {
     font-size: 15px;
   }
@@ -297,7 +297,7 @@ body {
   font-size: 25px;
   padding-bottom: 2%;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .contact h5 {
     font-size: 25px;
   }
