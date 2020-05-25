@@ -57,33 +57,176 @@ html, body {
     height: 100%;
 }
 
-// * {
-// 	outline: 1px solid cyan;
-//   }
+* {
+	background: @bgcolor;
+  }
 
-@hsize: 30;
+@hsize: 25px;
+@msize: 25px;
 @bgcolor: snow;
 @fnt: darkslategrey;
-@fnt: 
+
+.heads() {
+	font-size: 35px;
+	color: #000;
+	font-family: monospace;
+}
+
+
+.flex(){
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.text(){
+	font-family: "andale Mono", AndaleMono, monospace;
+	font-size: 15px;
+	color: @fnt;
+}
+
   
 .container{
 	width: 100%;
 	height: 100%;
-	background: @bgcolor;
+	padding: 0 10% 0 10%;
 
 	.navigation{
-		display: flex;
-		justify-content: space-evenly;
-		
+		.flex;
+		padding: 1% 0 1% 0;
+		@media (min-width: 500px) {
+			justify-content: space-between;
+		}
+
 		a{
 			font-size: @hsize;
+			font-family: "Andale Mono",AndaleMono,monospace;
 			text-decoration: none;
 			color: @fnt;
+		}
+	}
 
+	h1{
+		.heads;
+		text-align: center;
+		padding-top: 3%;
+		@media (min-width: 500px){
+			font-size: @msize;
+			padding-top: 10%;
+		}
+
+	}
+
+	img{
+		padding: 3% 0 0 30%;
+		align-items: center;
+		@media (min-width: 500px) {
+			display: none;
 		}
 	}
 	
 }
 
+.aboutMe{
+	width: 35%;
+	padding-top: 3%;
+	.flex;
+	flex-direction: column;
+	align-items: left;
+	@media (min-width: 500px){
+		width:100%;
+		align-items: center;
+		padding-top: 20%;
+	}
+	
+	h2{
+		.heads;
+		padding-bottom: 2%;
+		@media (min-width: 500px){
+			font-size: @msize;
+		}
+	}
 
+	p{
+		.text;
+		width: 90%;
+		text-align: left;
+		margin: 1rem 0 0 0;
+	}
+}
 
+.skills{
+	width: 100%;
+	padding: 3% 0 0 50%;
+	.flex;
+	flex-direction: column;
+	text-align: left;
+	.text;
+	@media (min-width: 500px){
+		width:100%;
+		align-items: center;
+		padding: 20% 0 0 0;
+		text-align: center;
+		
+	}
+
+	h3{
+		.heads;
+		text-align: left;
+		@media (min-width: 500px){
+			font-size: @msize;
+		}
+		
+	}
+}
+
+.workHistory{
+	width: 35%;
+	padding-top: 3%;
+	.flex;
+	flex-direction: column;
+	align-items: left;
+	.text;
+	@media (min-width: 500px){
+		width:100%;
+		align-items: center;
+		text-align: center;
+		padding-top: 20%;
+	}
+
+	h4{
+		.heads;
+		padding-bottom: 2%;
+		@media (min-width: 500px){
+			font-size: @msize;
+		}
+	}
+
+}
+
+.contact{
+	width: 100%;
+	padding-top: 10%;
+	text-align: center;
+	
+
+	a{
+		font-size: @hsize;
+		font-family: "Andale Mono",AndaleMono,monospace;
+		text-decoration: none;
+		color: @fnt;
+		justify-content: space-evenly;
+		@media (min-width: 500px){
+			font-size: 15px;
+		}
+	}
+
+	h5{
+		color: @fnt;
+		text-align: center;
+		font-size: @hsize;
+		padding-bottom: 2%;
+		@media (min-width: 500px){
+			font-size: @msize;
+		}
+	}
+}
