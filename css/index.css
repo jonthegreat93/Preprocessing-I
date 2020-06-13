@@ -1,1 +1,304 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  background: snow;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 10% 0 10%;
+}
+.container .navigation {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1% 0 1% 0;
+}
+@media (max-width: 500px) {
+  .container .navigation {
+    justify-content: space-between;
+  }
+}
+.container .navigation a {
+  font-size: 25px;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  text-decoration: none;
+  color: darkslategrey;
+}
+.container h1 {
+  font-size: 35px;
+  color: #000;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 3%;
+}
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 25px;
+    padding-top: 10%;
+  }
+}
+.container img {
+  padding: 3% 0 0 30%;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container img {
+    display: none;
+  }
+}
+.aboutMe {
+  width: 35%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+}
+@media (max-width: 500px) {
+  .aboutMe {
+    width: 100%;
+    align-items: center;
+    padding-top: 20%;
+  }
+}
+.aboutMe h2 {
+  font-size: 35px;
+  color: #000;
+  font-family: monospace;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .aboutMe h2 {
+    font-size: 25px;
+  }
+}
+.aboutMe p {
+  font-family: "andale Mono", AndaleMono, monospace;
+  font-size: 15px;
+  color: darkslategrey;
+  width: 90%;
+  text-align: left;
+  margin: 1rem 0 0 0;
+}
+.skills {
+  width: 100%;
+  padding: 3% 0 0 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: left;
+  font-family: "andale Mono", AndaleMono, monospace;
+  font-size: 15px;
+  color: darkslategrey;
+}
+@media (max-width: 500px) {
+  .skills {
+    width: 100%;
+    align-items: center;
+    padding: 20% 0 0 0;
+    text-align: center;
+  }
+}
+.skills h3 {
+  font-size: 35px;
+  color: #000;
+  font-family: monospace;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .skills h3 {
+    font-size: 25px;
+  }
+}
+.workHistory {
+  width: 35%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: left;
+  font-family: "andale Mono", AndaleMono, monospace;
+  font-size: 15px;
+  color: darkslategrey;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+  }
+}
+.workHistory h4 {
+  font-size: 35px;
+  color: #000;
+  font-family: monospace;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .workHistory h4 {
+    font-size: 25px;
+  }
+}
+.contact {
+  width: 100%;
+  padding-top: 10%;
+  text-align: center;
+}
+.contact a {
+  font-size: 25px;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  text-decoration: none;
+  color: darkslategrey;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .contact a {
+    font-size: 15px;
+  }
+}
+.contact h5 {
+  color: darkslategrey;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .contact h5 {
+    font-size: 25px;
+  }
+}
